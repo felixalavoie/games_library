@@ -4,7 +4,7 @@ import ThemeSwitch from "./ThemeSwitch";
 
 const Navbar = () => {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" padding="10px 20px">
       <Image src={logo} boxSize="60px" />
       <ThemeSwitch />
     </HStack>
