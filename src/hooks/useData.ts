@@ -24,7 +24,6 @@ const useData = <T>(endpoint: string) => {
       .then((response) => {
         setData(response.data.results);
         setLoading(false);
-        console.log(data);
       })
       .catch((error) => {
         if (error instanceof CanceledError) return;
