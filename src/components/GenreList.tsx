@@ -31,7 +31,11 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
               boxSize="32px"
               borderRadius={10}
             />
-            <Button variant="link" onClick={() => onSelectGenre(genre)}>
+            <Button
+              variant="link"
+              onClick={() => onSelectGenre(genre)}
+              color={selectedGenre == genre ? "orange" : "white"}
+            >
               {genre.name}
             </Button>
           </HStack>
