@@ -15,7 +15,7 @@ const GameGrid = ({ gameQuery }: Props) => {
     {
       params: {
         genres: gameQuery?.genre?.id,
-        platforms: gameQuery?.platform?.id,
+        parent_platforms: gameQuery?.platform?.id,
       },
     },
     [gameQuery?.genre?.id, gameQuery?.platform?.id]
