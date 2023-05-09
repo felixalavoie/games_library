@@ -35,7 +35,7 @@ const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
             <Button
               variant="link"
               onClick={() => onSelectGenre(genre)}
-              color={selectedGenre == genre ? "orange" : "white"}
+              color={selectedGenre == genre ? "orange" : ""}
             >
               {genre.name}
             </Button>
