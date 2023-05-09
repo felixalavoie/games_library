@@ -33,7 +33,6 @@ const useGames = (requestConfig?: AxiosRequestConfig, dependencies?: any[]) => {
           ...requestConfig,
         })
         .then((response) => {
-          console.log(requestConfig);
           setGames(response.data.results);
           setLoading(false);
         })
